@@ -1,0 +1,117 @@
+$margin-for-elements: 1.3rem;
+$font-size-for-icons-nav-bar: 1.2rem;
+$font-size-for-icons-tip-menu: 1.5rem;
+$color-for-text: rgb(255,255,255);
+$border-radius: 10px 10px 0 0;
+@mixin font-size-for-bigger-phone-nav-bar {
+  @media screen and (min-width: 363px){
+    font-size: $font-size-for-icons-nav-bar;
+  }
+}
+@mixin font-size-for-bigger-phone-tip-menu {
+  @media screen and (min-width: 363px){
+    font-size: $font-size-for-icons-tip-menu;
+  }
+}
+//@font-face {
+//  font-family: YourFontFamily;
+//  src: url("/src/assets/fonts/BLACKJAR.TTF") format("truetype");
+//}
+
+section {
+  background-image: url("../../assets/photo/adult-beard-boy-casual-220453.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  @media screen and (max-width: 350px){
+    background-size: 350px;
+  }
+  @media screen and (max-width: 400px){
+    background-size: 400px;
+  }
+  width: 100%;
+  border-radius: $border-radius;
+  .transbox {
+    border-radius: $border-radius;
+    background-color:rgba(32, 96, 105, 0.8);
+    height: 100%;
+    width: 100%;
+  //  display: flex;
+    //flex-direction: column;
+    [class*="col-"] {
+      width: 100%;
+    }
+    .nav-bar-content {
+      display: flex;
+      color: $color-for-text;
+      //width: 100%;
+      //height: 100%;
+      .bars {
+        flex: 2;
+        margin: $margin-for-elements;
+        font-size: .9rem;
+        @include font-size-for-bigger-phone-nav-bar;
+      }
+      .logo {
+        flex: 1;
+        text-align: center;
+        margin: $margin-for-elements;
+        //    font-family: 'BLACKJAR';
+        font-size: .9rem;
+        @include font-size-for-bigger-phone-nav-bar;
+      }
+      .suitcase {
+        flex: 2;
+        text-align: right;
+        margin: $margin-for-elements;
+        font-size: .9rem;
+        @include font-size-for-bigger-phone-nav-bar;
+      }
+    }
+    .main-content {
+      //width: 100%;
+      //height: 100%;
+      .title-and-description {
+        font-size: .9rem;
+        @include font-size-for-bigger-phone-nav-bar;
+        color: $color-for-text;
+        h1 {
+          padding: .7rem;
+        }
+        text-align: center;
+        margin: 3.5rem;
+        //@media screen and (min-height: 480px){
+        //  margin: 3rem;
+        //}
+      }
+    }
+    .tip-content {
+      display: flex;
+      //width: 100%;
+      //height: 100%;
+      color: $color-for-text;
+      align-items: flex-end;
+      .basketball-ball {
+        flex: 2;
+        text-align: right;
+        font-size: 1.2rem;
+        margin: 2rem;
+        @include font-size-for-bigger-phone-tip-menu;
+      }
+      .behance {
+        flex: 1;
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 2rem;
+        @include font-size-for-bigger-phone-tip-menu;
+      }
+      .tree {
+        flex: 2;
+        font-size: 1.2rem;
+        margin: 2rem;
+        @include font-size-for-bigger-phone-tip-menu;
+      }
+    }
+  }
+}
+

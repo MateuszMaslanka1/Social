@@ -3,14 +3,25 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { InfoPageComponent } from './info-page/info-page.component';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { PhotoComponent } from './photo/photo.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NotificationsIconsComponent } from './notifications/notifications-icons/notifications-icons.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InfoPageComponent,
+    NotificationsComponent,
+    PhotoComponent,
+    NotificationsIconsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

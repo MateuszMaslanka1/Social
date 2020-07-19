@@ -1,0 +1,25 @@
+@mixin settings-for-icons {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  color: #bdd0d4;
+  .change-color {
+    color: red;
+  }
+}
+  :host {
+    display: flex;
+  }
+  .heart {
+    @include settings-for-icons;
+    justify-content: center;
+  }
+  .trash {
+    @include settings-for-icons;
+    align-items: center;
+  }
+  .eye{
+    @include settings-for-icons;
+    color: white;
+    justify-content: flex-end;
+  }
