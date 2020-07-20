@@ -1,6 +1,8 @@
 <section>
     <div [className]="'nav-bar'">
-      <fa-icon [icon]='faPencilAlt'></fa-icon>
+      <div  [className]="'pencil'">
+        <fa-icon [icon]='faPencilAlt'></fa-icon>
+    </div>
     </div>
     <div [className]="'photo'">
       <img src="../../assets/photo/adult-beard-boy-casual-220453.jpg" >
@@ -10,16 +12,28 @@
       <p>love with UI/ GUI / UX</p>
     </div>
     <div [className]="'option'">
-      <ul>
-        <li>
-            <fa-icon [icon]='faEnvelope'></fa-icon>
-            <h5>Mail Inbox</h5>
-            <p [className]="'count'">5</p>
+      <ul  [className]="'option-list'">
+        <li (click)='showEmailList()' [className]="'element-list'">
+          <app-menu-icons></app-menu-icons>
+            <ul [className]="'sub-email-list'">
+              <li [className]="'sub-element'" [hidden]='emailFlag' *ngFor="let item of mail">{{item}}</li>
+            </ul>
         </li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li [className]="'element-list'">
+          <app-menu-icons></app-menu-icons>
+        </li>
+        <li [className]="'element-list'">
+          <app-menu-icons></app-menu-icons>
+        </li>
+        <li [className]="'element-list'">
+          <app-menu-icons></app-menu-icons>
+        </li>
+        <li [className]="'element-list'">
+          <app-menu-icons></app-menu-icons>
+        </li>
       </ul>
+    </div>
+    <div [className]="'eject'">
+      <fa-icon [icon]='faEject'></fa-icon>
     </div>
 </section>

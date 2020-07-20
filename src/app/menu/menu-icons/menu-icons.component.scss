@@ -1,0 +1,27 @@
+$font-size: 1.2rem;
+$margin-elements: 1rem;
+:host {
+  display: flex;
+  align-items: center;
+}
+
+fa-icon {
+  flex: 1;
+  margin: $margin-elements;
+  font-size: $font-size;
+}
+p {
+  font-size: $font-size;
+  flex: 10;
+}
+.count {
+  margin: $margin-elements;
+//  height: 1.2rem;
+  width: 1.4rem;
+  font-size: $font-size;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #797d86;
+  flex: 2;
+  // padding: 1.5rem;
+}
