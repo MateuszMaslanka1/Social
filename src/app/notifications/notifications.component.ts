@@ -1,7 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {faEye} from "@fortawesome/free-solid-svg-icons";
-import {faHeart} from "@fortawesome/free-solid-svg-icons";
-import {faTrash} from "@fortawesome/free-solid-svg-icons";
+import {faEye, faHeart, faTrash} from "@fortawesome/free-solid-svg-icons";
 @Component({
   selector: 'app-notifications',
   templateUrl: './notifications.component.html',

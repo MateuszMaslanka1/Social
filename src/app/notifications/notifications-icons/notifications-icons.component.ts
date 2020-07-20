@@ -23,6 +23,7 @@ export class NotificationsIconsComponent implements OnInit {
   }
 
   removeNotification() {
-    this.elRef.nativeElement.parentElement.parentElement.remove();
+    console.log(this.elRef.nativeElement);
+   // this.elRef.nativeElement.parentElement.parentElement.remove();
   }
 }

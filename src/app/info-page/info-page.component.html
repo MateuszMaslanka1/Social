@@ -1,8 +1,13 @@
-<section>
-  <div [className]="'photo'">
-    <app-photo></app-photo>
-  </div>
-  <div [className]="'notifications'">
-    <app-notifications></app-notifications>
-  </div>
+<section [className]="'all-content'">
+  <section [className]="'menu hidden-menu'" #menu>
+    <app-menu></app-menu>
+  </section>
+  <section [className]="'notification'" #notification>
+    <div [className]="'photo'">
+      <app-photo></app-photo>
+    </div>
+    <div [className]="'notifications'">
+      <app-notifications></app-notifications>
+    </div>
+  </section>
 </section>

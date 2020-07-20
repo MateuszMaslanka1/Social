@@ -8,6 +8,7 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { PhotoComponent } from './photo/photo.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NotificationsIconsComponent } from './notifications/notifications-icons/notifications-icons.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { NotificationsIconsComponent } from './notifications/notifications-icons
     InfoPageComponent,
     NotificationsComponent,
     PhotoComponent,
-    NotificationsIconsComponent
+    NotificationsIconsComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

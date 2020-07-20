@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { GetElementsService } from './../get-elements.service';
+import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-info-page',
   templateUrl: './info-page.component.html',
   styleUrls: ['./info-page.component.scss']
 })
-export class InfoPageComponent implements OnInit {
+export class InfoPageComponent implements AfterViewInit {
 
-  constructor() { }
+  constructor(private getElementsService: GetElementsService) { }
 
-  ngOnInit() {
+  @ViewChild('menu', {static: false}) menu: ElementRef;
+  @ViewChild('notification', {static: false}) notification: ElementRef;
+
+  ngAfterViewInit() {
+    this.getElementsService.setElements(this.menu, this.notification);
   }
 
 }

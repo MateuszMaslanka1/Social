@@ -4,14 +4,14 @@ $font-size-for-icons-tip-menu: 1.5rem;
 $color-for-text: rgb(255,255,255);
 $border-radius: 10px 10px 0 0;
 @mixin font-size-for-bigger-phone-nav-bar {
-  @media screen and (min-width: 363px){
+ // @media screen and (min-width: 363px){
     font-size: $font-size-for-icons-nav-bar;
-  }
+ // }
 }
 @mixin font-size-for-bigger-phone-tip-menu {
-  @media screen and (min-width: 363px){
+//  @media screen and (min-width: 363px){
     font-size: $font-size-for-icons-tip-menu;
-  }
+//  }
 }
 //@font-face {
 //  font-family: YourFontFamily;

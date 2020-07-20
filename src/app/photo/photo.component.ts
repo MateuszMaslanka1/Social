@@ -1,9 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { faSuitcase } from '@fortawesome/free-solid-svg-icons';
-import { faTree } from '@fortawesome/free-solid-svg-icons';
-import { faBahai }  from '@fortawesome/free-solid-svg-icons';
-import { faBaseballBall } from "@fortawesome/free-solid-svg-icons";
+import { Component, OnInit, ElementRef } from '@angular/core';
+import { faBars, faSuitcase, faTree, faBahai, faBaseballBall } from '@fortawesome/free-solid-svg-icons';
+import { GetElementsService } from '../get-elements.service';
 
 @Component({
   selector: 'app-photo',
@@ -12,15 +9,21 @@ import { faBaseballBall } from "@fortawesome/free-solid-svg-icons";
 })
 export class PhotoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private getElementsService: GetElementsService) { }
   faBars = faBars;
   faSuitcase = faSuitcase;
   faTree = faTree;
   faBahai = faBahai;
   faBaseballBall = faBaseballBall;
+  elemetnsToShow;
 
   ngOnInit() {
+    this.elemetnsToShow = this.getElementsService.getElements();
+  }
 
+  showMenu() {
+    this.elemetnsToShow.menu.nativeElement.classList.toggle('hidden-menu');
+    this.elemetnsToShow.notification.nativeElement.classList.toggle('displament-notification');
   }
 
 }
