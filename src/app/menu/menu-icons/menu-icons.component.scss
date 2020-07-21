@@ -9,10 +9,10 @@ p {
   font-size: $font-size;
   display: inline-block;
 }
-.postion-of-count {
-  display: inline-block;
-   width: 25%;
+// .postion-of-count {
       .count {
+        display: inline-block;
+    //    width: 25%;
         font-size: $font-size;
         margin: $margin-elements;
         width: 2.4rem;
@@ -20,5 +20,5 @@ p {
         text-align: center;
         background-color: #797d86;
       }
-}
+// }
 
