@@ -1,6 +1,6 @@
 $color-border: #2e3339;
 section {
-    width: 100%;
+    //width: 100%;
     //height: 100%;
   .nav-bar {
       color: white;
@@ -26,52 +26,46 @@ section {
         p {
           color: #f56f6c;
         }
-    }
-    .option {
-      margin-top: 1.5rem;
-      .option-list {
-        color: white;
-        .element-list {
-          border-bottom: 2px solid $color-border;
-          // display: flex;
-          // align-items: center;
-          // justify-content: center;
-            fa-icon {
-              flex: 1;
-              margin: 1rem;
-              font-size: 1.2rem;
-            }
-            .color-for-icon {
-              color: #f56f6c;
-            }
-            .sub-email-list {
-              list-style-type: none;
-              background-color: red;
-              .sub-element{
-                padding: .9rem;
-              }
-            }
-          .icon {
-            display: inline-block;
-            width: 15%;
-          }
-          app-menu-icons {
-            display: inline-block;
-            width: 85%;
+      }
+      .element-list {
+        color: #797d86;
+        border-bottom: 1px solid $color-border;
+        width: 100%;
+        height: 3em;
+        display: flex;
+        align-items: center;
+        .icon {
+          margin-left: 1rem;
+          font-size: 1.2rem;
+          flex: 1;
+          .color-for-icon {
+            color: #f56f6c;
           }
         }
-        .element-list:first-of-type {
-          border-top: 2px solid $color-border;
-        }
-        .click-style-option {
-          background-color: black;
+        app-menu-icons {
+          flex: 8;
+          @media screen and (max-width: 362px) {
+            flex: 6;
+          }
         }
       }
-    }
+      .sub-email-list {
+        color: #797d86;
+        list-style-type: none;
+        .sub-element{
+          padding: .9rem;
+        }
+      }
+      .click-style-option {
+        background-color: #1b2026;
+      }
+      .add-border {
+        border-top: 1px solid $color-border;
+      }
     .eject {
       font-size: 3rem;
       color: #f56f6c;
       text-align: center;
-      padding: 1.5rem;
+      padding: 2.5rem;
     }
 }

@@ -1,7 +1,7 @@
 .all-content {
   width: 100vw;
   height: 100vh;
-//  position: relative;
+  //  position: relative;
   .menu {
     overflow: auto;
     border: 1px solid;
@@ -26,17 +26,17 @@
     height: 100%;
     background: #f56f6c;
     border-radius: 10px 10px 0 0;
-      //.photo {
-      //  width: 100%;
-      //  height: 50vh;
-      //}
-      //.notifications {
-      //  width: 100%;
-      //  height: auto;
-      //}
-      app-notification {
-        position: relative;
-      }
+    //.photo {
+    //  width: 100%;
+    //  height: 50vh;
+    //}
+    //.notifications {
+    //  width: 100%;
+    //  height: auto;
+    //}
+    app-notification {
+      position: relative;
+    }
   }
   .displament-notification {
     position: fixed;
@@ -58,4 +58,3 @@
     display: none;
   }
 }
-

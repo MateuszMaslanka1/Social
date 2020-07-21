@@ -1,24 +1,21 @@
 $font-size: 1.2rem;
 $margin-elements: 1rem;
-// :host {
-//   display: flex;
-//   flex-direction: column;
-// }
+ :host {
+   display: flex;
+   justify-content: space-between;
+ }
 p {
-  width: 75%;
   font-size: $font-size;
   display: inline-block;
 }
-// .postion-of-count {
-      .count {
-        display: inline-block;
-    //    width: 25%;
-        font-size: $font-size;
-        margin: $margin-elements;
-        width: 2.4rem;
-        border-radius: 15px;
-        text-align: center;
-        background-color: #797d86;
-      }
-// }
+.count {
+  color: white;
+  font-size: $font-size;
+  margin-right: $margin-elements;
+  width: 2.4rem;
+  height: 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #797d86;
+}
 

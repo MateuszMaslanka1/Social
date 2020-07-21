@@ -1,5 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {faMobileAlt, faCloud, faImage, faDesktop} from '@fortawesome/free-solid-svg-icons';
+import {faCloud, faDesktop, faImage, faMobileAlt} from '@fortawesome/free-solid-svg-icons';
+import {GetElementsService} from "../get-elements.service";
+import {of} from "rxjs";
+
 @Component({
   selector: 'app-notifications',
   templateUrl: './notifications.component.html',
@@ -7,7 +10,7 @@ import {faMobileAlt, faCloud, faImage, faDesktop} from '@fortawesome/free-solid-
 })
 export class NotificationsComponent implements OnInit  {
 
-  constructor() { }
+  constructor(private getElementsService: GetElementsService) { }
   faMobileAlt = faMobileAlt;
   faCould = faCloud;
   faImage = faImage;
@@ -17,8 +20,10 @@ export class NotificationsComponent implements OnInit  {
   }
 
   toggleClass(event) {
-    event.currentTarget.classList.toggle('add-displacement-to-notification');
-    event.currentTarget.nextSibling.classList.toggle('option');
-    event.currentTarget.nextSibling.classList.toggle('add-displacement-to-option');
+   if (this.getElementsService.getOpenMenuFlag()) {
+      event.currentTarget.classList.toggle('add-displacement-to-notification');
+      event.currentTarget.nextSibling.classList.toggle('option');
+      event.currentTarget.nextSibling.classList.toggle('add-displacement-to-option');
+   }
   }
 }

@@ -16,5 +16,4 @@ export class InfoPageComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.getElementsService.setElements(this.menu, this.notification);
   }
-
 }

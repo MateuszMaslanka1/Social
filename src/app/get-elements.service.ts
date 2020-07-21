@@ -11,6 +11,7 @@ export class GetElementsService {
     menu: ElementRef,
     notification: ElementRef
   };
+  openMenuFlag = true;
 
   getElements() {
     return this.elements;
@@ -19,5 +20,14 @@ export class GetElementsService {
   setElements(menu, notification) {
     this.elements.menu = menu;
     this.elements.notification = notification;
+  }
+
+  getOpenMenuFlag() {
+    return this.openMenuFlag;
+  }
+
+  setOpenMenuFlag(openMenuFlag) {
+    console.log(openMenuFlag);
+    this.openMenuFlag = openMenuFlag;
   }
 }
