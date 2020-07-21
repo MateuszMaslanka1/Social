@@ -14,21 +14,36 @@
     <div [className]="'option'">
       <ul  [className]="'option-list'">
         <li (click)='showEmailList($event)' [className]="'element-list color-for-icon'">
+          <div [className]="'icon'">
+            <fa-icon [icon]='faEnvelope'></fa-icon>
+          </div>
           <app-menu-icons></app-menu-icons>
             <ul [className]="'sub-email-list'">
               <li [className]="'sub-element'" [hidden]='emailFlag' *ngFor="let item of mail">{{item}}</li>
             </ul>
         </li>
         <li [className]="'element-list'">
+          <div [className]="'icon'">
+            <fa-icon [icon]='faUserFriends'></fa-icon>
+          </div>
           <app-menu-icons></app-menu-icons>
         </li>
         <li [className]="'element-list'">
+          <div [className]="'icon'">
+            <fa-icon [icon]='faPaperPlane'></fa-icon>
+          </div>
           <app-menu-icons></app-menu-icons>
         </li>
         <li [className]="'element-list'">
+          <div [className]="'icon'">
+            <fa-icon [icon]='faBookmark'></fa-icon>
+          </div>
           <app-menu-icons></app-menu-icons>
         </li>
         <li [className]="'element-list'">
+          <div [className]="'icon'">
+            <fa-icon [icon]='faCog'></fa-icon>
+          </div>
           <app-menu-icons></app-menu-icons>
         </li>
       </ul>

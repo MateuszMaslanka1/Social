@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-
+import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'app-menu-icons',
   templateUrl: './menu-icons.component.html',
@@ -10,9 +8,10 @@ export class MenuIconsComponent implements OnInit {
 
   constructor() { }
 
-  faEnvelope = faEnvelope;
+    @Input('text') text: string;
 
   ngOnInit() {
+    // this.icon =
   }
 
 }
