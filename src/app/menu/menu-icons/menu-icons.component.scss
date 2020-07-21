@@ -1,24 +1,24 @@
 $font-size: 1.2rem;
 $margin-elements: 1rem;
-:host {
-  // display: flex;
-  // // align-items: center;
-  // // justify-content: center;
+// :host {
+//   display: flex;
+//   flex-direction: column;
+// }
+p {
+  width: 75%;
+  font-size: $font-size;
+  display: inline-block;
+}
+.postion-of-count {
+  display: inline-block;
+   width: 25%;
+      .count {
+        font-size: $font-size;
+        margin: $margin-elements;
+        width: 2.4rem;
+        border-radius: 15px;
+        text-align: center;
+        background-color: #797d86;
+      }
 }
 
-p {
-  display: inline-block;
-  font-size: $font-size;
-  flex: 10;
-}
-.count {
-  display: inline-block;
-  margin: $margin-elements;
-//  height: 1.2rem;
-  width: 1.4rem;
-  font-size: $font-size;
-  border-radius: 15px;
-  text-align: center;
-  background-color: #797d86;
-  // padding: 1.5rem;
-}

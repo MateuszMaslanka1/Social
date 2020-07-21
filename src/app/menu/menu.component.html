@@ -17,7 +17,7 @@
           <div [className]="'icon'">
             <fa-icon [icon]='faEnvelope'></fa-icon>
           </div>
-          <app-menu-icons></app-menu-icons>
+          <app-menu-icons text="Mail Inbox"></app-menu-icons>
             <ul [className]="'sub-email-list'">
               <li [className]="'sub-element'" [hidden]='emailFlag' *ngFor="let item of mail">{{item}}</li>
             </ul>
@@ -26,25 +26,25 @@
           <div [className]="'icon'">
             <fa-icon [icon]='faUserFriends'></fa-icon>
           </div>
-          <app-menu-icons></app-menu-icons>
+          <app-menu-icons  text="Friends"></app-menu-icons>
         </li>
         <li [className]="'element-list'">
           <div [className]="'icon'">
             <fa-icon [icon]='faPaperPlane'></fa-icon>
           </div>
-          <app-menu-icons></app-menu-icons>
+          <app-menu-icons text="Invents"></app-menu-icons>
         </li>
         <li [className]="'element-list'">
           <div [className]="'icon'">
             <fa-icon [icon]='faBookmark'></fa-icon>
           </div>
-          <app-menu-icons></app-menu-icons>
+          <app-menu-icons text="Bookmarks"></app-menu-icons>
         </li>
         <li [className]="'element-list'">
           <div [className]="'icon'">
             <fa-icon [icon]='faCog'></fa-icon>
           </div>
-          <app-menu-icons></app-menu-icons>
+          <app-menu-icons text="Account Settings"></app-menu-icons>
         </li>
       </ul>
     </div>

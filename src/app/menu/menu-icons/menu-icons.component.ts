@@ -8,10 +8,9 @@ export class MenuIconsComponent implements OnInit {
 
   constructor() { }
 
-    @Input('text') text: string;
+  @Input('text') text: string;
 
   ngOnInit() {
-    // this.icon =
   }
 
 }
