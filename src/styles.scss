@@ -1,6 +1,11 @@
 /* You can add global styles to thsis file, and also import other style files */
+@font-face {
+  font-family: NewCicleFina;
+  src: url(assets/fonts/NewCicleFina.otf) format("opentype");
+}
 body {
  background: black;
+ font-family: 'NewCicleFina', 'arial', sans-serif;
 }
 
 * {

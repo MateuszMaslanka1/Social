@@ -1,24 +1,60 @@
 <section>
     <div [className]="'first'">
-      <div [className]="'notification'" (click)="toggleClass($event)">dzxc1</div>
+      <div [className]="'notification'" (click)="toggleClass($event)">
+        <div [className]="'icon'">
+          <fa-icon [icon]='faMobileAlt'></fa-icon>
+        </div>
+        <div [className]="'info'">
+            <p>1 minute ago </p>
+            <p>by Mike | Creative Mints</p>
+            <h5>Mechanical Grasshopper</h5>
+        </div>
+      </div>
       <div [className]="'option'">
         <app-notifications-icons></app-notifications-icons>
       </div>
     </div>
     <div [className]="'second'">
-      <div [className]="'notification'" (click)="toggleClass($event)">asd2</div>
+      <div [className]="'notification'" (click)="toggleClass($event)">
+        <div [className]="'icon'">
+          <fa-icon [icon]='faCould'></fa-icon>
+        </div>
+          <div [className]="'info'">
+            <p>1 minute ago</p>
+            <p>by Mike | Creative Mints</p>
+            <h5>Mechanical Grasshopper</h5>
+        </div>
+      </div>
       <div [className]="'option'">
         <app-notifications-icons></app-notifications-icons>
       </div>
     </div>
     <div [className]="'third'">
-      <div [className]="'notification'" (click)="toggleClass($event)">asd3</div>
+      <div [className]="'notification'" (click)="toggleClass($event)">
+        <div [className]="'icon'">
+          <fa-icon [icon]='faImage'></fa-icon>
+        </div>
+        <div [className]="'info'">
+            <p>1 minute ago</p>
+            <p>by Mike | Creative Mints</p>
+            <h5>Mechanical Grasshopper</h5>
+        </div>
+      </div>
       <div [className]="'option'">
         <app-notifications-icons></app-notifications-icons>
       </div>
     </div>
     <div [className]="'fourth'">
-      <div [className]="'notification'" (click)="toggleClass($event)">asd4</div>
+      <div [className]="'notification'" (click)="toggleClass($event)">
+        <div [className]="'icon'">
+          <fa-icon [icon]='faDesktop'></fa-icon>
+        </div>
+        <div [className]="'info'">
+            <p>1 minute ago</p>
+            <p>by Mike | Creative Mints</p>
+            <h5>Mechanical Grasshopper</h5>
+        </div>
+      </div>
       <div [className]="'option'">
         <app-notifications-icons></app-notifications-icons>
       </div>

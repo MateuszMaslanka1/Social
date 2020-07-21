@@ -23,6 +23,9 @@ section {
       padding: 1rem;
       color: white;
       text-align: center;
+        p {
+          color: #f56f6c;
+        }
     }
     .option {
       margin-top: 1.5rem;
@@ -31,11 +34,12 @@ section {
         .element-list {
             .sub-email-list {
               list-style-type: none;
+              background-color: red;
               .sub-element{
-                margin: 1rem;
+                padding: .9rem;
               }
             }
-          border-bottom: 1px solid $color-border;
+          border-bottom: 2px solid $color-border;
           height: 100%;
           width: 100%;
 
@@ -44,15 +48,18 @@ section {
             height: 100%;
           }
         }
+        .element-list:first-of-type {
+          border-top: 2px solid $color-border;
+        }
+        .click-style-option {
+          background-color: black;
+        }
       }
     }
     .eject {
       font-size: 3rem;
       color: #f56f6c;
       text-align: center;
-      //margin: 2rem;
-        fa-icon {
-          display: block;
-        }
+      padding: 1.5rem;
     }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import { faPencilAlt, faEject } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -9,7 +9,7 @@ import { faPencilAlt, faEject } from '@fortawesome/free-solid-svg-icons';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private elRef: ElementRef) { }
 
   faPencilAlt = faPencilAlt;
   faEject = faEject;
@@ -19,7 +19,9 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   }
 
-  showEmailList() {
+  showEmailList($event) {
     this.emailFlag = !this.emailFlag;
+    $event.currentTarget.classList.toggle('click-style-option');
+    $event.currentTarget.childNodes[0].childNodes[0].classList.toggle('color-for-icon');
   }
 }

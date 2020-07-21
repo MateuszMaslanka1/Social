@@ -8,6 +8,31 @@
     height: 100%;
     background: #f56f6c;
     border-bottom: .5px solid #fdfffc;
+    color: white;
+    display: flex;
+    .icon {
+      display: flex;
+      width: 4rem;
+      justify-content: center;
+      align-items: center;
+      fa-icon {
+        flex: 1;
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
+    .info {
+      padding: 1rem 0 0 0;
+      flex: 10;
+        p {
+          display: inline;
+          font-size: .8rem;
+        }
+        h5 {
+          padding-top: .2rem;
+          font-size: 1rem;
+        }
+    }
   }
   .option{
     display: none;
@@ -15,13 +40,13 @@
 }
 
 .add-displacement-to-notification {
-  position: relative;
+  position: absolute;
   right: 60%;
 }
 .add-displacement-to-option{
-  position: relative;
+  position: absolute;
   left: 40%;
-  bottom: 100%;
+  bottom: 0;
   background-image: url("../../assets/photo/iphone-410324_640.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -38,10 +63,11 @@
   }
 }
 section {
-      position: relative;
+      position: absolute;
       width: 100%;
-      bottom: 10px;
+      top: 365px;
       .first {
+        position: relative;
         div.notification {
           border-radius: 10px 10px 0 0;
         }
@@ -49,14 +75,17 @@ section {
         @include setting-for-option-notifications;
       }
       .second {
+        position: relative;
         @include size-for-notifications;
         @include setting-for-option-notifications;
       }
       .third {
+        position: relative;
         @include size-for-notifications;
         @include setting-for-option-notifications;
       }
       .fourth {
+        position: relative;
         @include size-for-notifications;
         @include setting-for-option-notifications;
       }

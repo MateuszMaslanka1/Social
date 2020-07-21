@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {faEye, faHeart, faTrash} from "@fortawesome/free-solid-svg-icons";
+import {faMobileAlt, faCloud, faImage, faDesktop} from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-notifications',
   templateUrl: './notifications.component.html',
@@ -8,9 +8,10 @@ import {faEye, faHeart, faTrash} from "@fortawesome/free-solid-svg-icons";
 export class NotificationsComponent implements OnInit  {
 
   constructor() { }
-  faEye = faEye
-  faHeart = faHeart;
-  faTrash = faTrash;
+  faMobileAlt = faMobileAlt;
+  faCould = faCloud;
+  faImage = faImage;
+  faDesktop = faDesktop;
 
   ngOnInit()  {
   }

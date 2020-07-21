@@ -13,7 +13,7 @@
     </div>
     <div [className]="'option'">
       <ul  [className]="'option-list'">
-        <li (click)='showEmailList()' [className]="'element-list'">
+        <li (click)='showEmailList($event)' [className]="'element-list color-for-icon'">
           <app-menu-icons></app-menu-icons>
             <ul [className]="'sub-email-list'">
               <li [className]="'sub-element'" [hidden]='emailFlag' *ngFor="let item of mail">{{item}}</li>
@@ -33,7 +33,7 @@
         </li>
       </ul>
     </div>
-<!--    <div [className]="'eject'">-->
-<!--      <fa-icon [icon]='faEject'></fa-icon>-->
-<!--    </div>-->
+   <div [className]="'eject'">
+     <fa-icon [icon]='faEject'></fa-icon>
+    </div>
 </section>

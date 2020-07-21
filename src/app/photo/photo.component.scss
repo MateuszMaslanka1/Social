@@ -13,10 +13,10 @@ $border-radius: 10px 10px 0 0;
     font-size: $font-size-for-icons-tip-menu;
 //  }
 }
-//@font-face {
-//  font-family: YourFontFamily;
-//  src: url("/src/assets/fonts/BLACKJAR.TTF") format("truetype");
-//}
+@font-face {
+ font-family: BLACKJAR;
+ src: url("../../assets/fonts/BLACKJAR.TTF") format("opentype");
+}
 
 section {
   background-image: url("../../assets/photo/adult-beard-boy-casual-220453.jpg");
@@ -56,7 +56,7 @@ section {
         flex: 1;
         text-align: center;
         margin: $margin-for-elements;
-        //    font-family: 'BLACKJAR';
+        font-family: 'BLACKJAR';
         font-size: .9rem;
         @include font-size-for-bigger-phone-nav-bar;
       }
@@ -76,6 +76,8 @@ section {
         @include font-size-for-bigger-phone-nav-bar;
         color: $color-for-text;
         h1 {
+          font-family: 'BLACKJAR';
+          font-size: 2rem;
           padding: .7rem;
         }
         text-align: center;
@@ -95,20 +97,20 @@ section {
         flex: 2;
         text-align: right;
         font-size: 1.2rem;
-        margin: 2rem;
+        margin: 1.5rem;
         @include font-size-for-bigger-phone-tip-menu;
       }
       .behance {
         flex: 1;
         text-align: center;
         font-size: 1.2rem;
-        margin: 2rem;
+        margin: 1.5rem;
         @include font-size-for-bigger-phone-tip-menu;
       }
       .tree {
         flex: 2;
         font-size: 1.2rem;
-        margin: 2rem;
+        margin: 1.5rem;
         @include font-size-for-bigger-phone-tip-menu;
       }
     }
