@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { faBars, faSuitcase, faTree, faBahai, faBaseballBall, } from '@fortawesome/free-solid-svg-icons';
-import { GetElementsService } from '../get-elements.service';
+import {Component, OnInit} from '@angular/core';
+import {faBahai, faBars, faSuitcase} from '@fortawesome/free-solid-svg-icons';
+import {GetElementsService} from '../get-elements.service';
 
 @Component({
   selector: 'app-photo',
@@ -12,9 +12,7 @@ export class PhotoComponent implements OnInit {
   constructor(private getElementsService: GetElementsService) { }
   faBars = faBars;
   faSuitcase = faSuitcase;
-  faTree = faTree;
   faBahai = faBahai;
-  faBaseballBall = faBaseballBall;
   elemetnsToShow;
   openMenuFlag = true;
 

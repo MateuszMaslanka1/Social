@@ -1,9 +1,7 @@
 $font-size: 1rem;
-$margin-elements: 1rem;
 @mixin setting-for-count {
   width: 35px;
   height: 18px;
-  //margin-right: $margin-elements;
   border-radius: 15px;
   text-align: center;
   .count {

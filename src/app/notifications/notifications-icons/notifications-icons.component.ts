@@ -1,5 +1,5 @@
 import {Component, ElementRef, OnInit} from '@angular/core';
-import {faEye ,faHeart ,faTrash} from "@fortawesome/free-solid-svg-icons";
+import {faEye, faHeart, faTrash} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-notifications-icons',
@@ -10,7 +10,7 @@ export class NotificationsIconsComponent implements OnInit {
 
   constructor(private elRef: ElementRef) { }
 
-  faEye = faEye
+  faEye = faEye;
   faHeart = faHeart;
   faTrash = faTrash;
   isLike: boolean;

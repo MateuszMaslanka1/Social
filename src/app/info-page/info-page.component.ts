@@ -1,4 +1,4 @@
-import { GetElementsService } from './../get-elements.service';
+import { GetElementsService } from '../get-elements.service';
 import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 
 @Component({
