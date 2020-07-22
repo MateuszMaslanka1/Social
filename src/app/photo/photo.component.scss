@@ -125,15 +125,7 @@ section {
         font-size: $font-size-for-tim-menu-icon;
         margin: $margin-for-tip-icon;
         @include font-size-for-bigger-phone-tip-menu;
-          // sup {
-          //   text-align: center;
-          //   font-size: 1rem;
-          //   display: inline-block;
-          //   background-color: #f56f6c;
-          //   border-radius: 10px;
-          //   width: 10px;
-          //   height: 15px;
-          // }
+
         position: relative;
         display: flex;
         justify-content: flex-end;
