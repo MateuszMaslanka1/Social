@@ -1,7 +1,17 @@
-<p>{{this.text}}</p>
-<div [className]="'border-for-count'" [hidden]="+this.showCount===0">
-  <p [className]="'count'">{{this.showCount}}</p>
-</div>
+<ng-container *ngIf="this.text==='Friends'">
+  <p [className]="'add-color-open-text'">{{this.text}}</p>
+  <div [className]="'border-for-count'" [hidden]="+this.showCount===0">
+    <p [className]="'count color-for-count'">{{this.showCount}}</p>
+  </div>
+</ng-container>
+<ng-container *ngIf="this.text!=='Friends'">
+  <p>{{this.text}}</p>
+  <div [className]="'border-for-count'" [hidden]="+this.showCount===0">
+    <p [className]="'count'">{{this.showCount}}</p>
+  </div>
+</ng-container>
+
+
 
 
 

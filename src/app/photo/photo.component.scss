@@ -51,7 +51,6 @@ section {
         @include font-size-for-bigger-phone-nav-bar;
       }
       .logo-and-title {
-        width: 100%;
         flex: 1;
         display: flex;
         justify-content: center;
@@ -112,7 +111,10 @@ section {
       height: 100%;
       align-items: flex-end;
       .border-for-icon {
-        width: 20rem;
+        width: 15rem;
+        @media screen and (min-width: 320px){
+          width: 20rem;
+        }
         @media screen and (min-width: 400px) {
           width: 25rem;
         }

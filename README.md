@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
 
+## Start Application
+
+1) In the console, go to the project folder "\Social"
+2) Add package typing in console "npm i"
+3) Run Application typing in console "npm start" or "ng serve"
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

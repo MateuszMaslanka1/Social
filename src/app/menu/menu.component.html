@@ -22,12 +22,12 @@
         <ul [className]="'sub-email-list'">
           <li [className]="'sub-element'" [hidden]='emailFlag' *ngFor="let item of mail">{{item}}</li>
         </ul>
-        <div [className]="'element-list'">
+        <div [className]="'element-list click-style-option'">
           <div [className]="'border-for-description'">
             <div [className]="'icon'">
-              <fa-icon [icon]='faUserFriends'></fa-icon>
+              <fa-icon [icon]='faUserFriends' [className]="'color-for-icon'"></fa-icon>
             </div>
-            <app-menu-icons  text="Friends" count="10"></app-menu-icons>
+            <app-menu-icons  text="Friends" count="25"></app-menu-icons>
           </div>
         </div>
         <div [className]="'element-list'">
@@ -35,7 +35,7 @@
             <div [className]="'icon'">
               <fa-icon [icon]='faPaperPlane'></fa-icon>
             </div>
-            <app-menu-icons text="Invents" count="5"></app-menu-icons>
+            <app-menu-icons text="Invents" count="1"></app-menu-icons>
           </div>
         </div>
         <div  [className]="'element-list'">

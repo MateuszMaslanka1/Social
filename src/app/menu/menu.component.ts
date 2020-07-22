@@ -1,6 +1,5 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
-import { faPencilAlt, faEject, faEnvelope, faUserFriends, faPaperPlane, faBookmark, faCog} from '@fortawesome/free-solid-svg-icons';
-import { mainModule } from 'process';
+import {Component, ElementRef, OnInit} from '@angular/core';
+import {faBookmark, faCog, faEject, faEnvelope, faPaperPlane, faPencilAlt, faUserFriends} from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -10,7 +9,7 @@ import { mainModule } from 'process';
 })
 export class MenuComponent implements OnInit {
 
-  constructor(private elRef: ElementRef) { }
+  constructor() { }
 
   faPencilAlt = faPencilAlt;
   faEject = faEject;
@@ -28,12 +27,7 @@ export class MenuComponent implements OnInit {
     this.countOfEmail = this.mail.length;
   }
 
-  showEmailList($event) {
+  showEmailList() {
     this.emailFlag = !this.emailFlag;
-    const getTextAndIcon = $event.currentTarget.firstChild;
-    getTextAndIcon.childNodes[0].childNodes[0].classList.toggle('color-for-icon');
-    getTextAndIcon.childNodes[1].childNodes[0].classList.toggle('add-color-open-text');
-    getTextAndIcon.childNodes[1].childNodes[1].classList.toggle('color-for-count');
-    getTextAndIcon.childNodes[1].childNodes[1].classList.toggle('border-for-count');
   }
 }
