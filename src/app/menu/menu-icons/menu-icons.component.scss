@@ -1,21 +1,22 @@
 $font-size: 1rem;
 $margin-elements: 1rem;
 @mixin setting-for-count {
-  color: white;
-  font-size: $font-size;
-  margin-right: $margin-elements;
-  width: 2.4rem;
-  height: 1.5rem;
+  width: 35px;
+  height: 18px;
+  //margin-right: $margin-elements;
   border-radius: 15px;
   text-align: center;
+  .count {
+    color: white;
+  }
 }
  :host {
    display: flex;
    justify-content: space-between;
  }
- .color-for-count {
+.color-for-count {
   @include setting-for-count;
-  background-color: darkgreen;
+  background-color: #16545f;
  }
  .add-color-open-text {
    color: white;
@@ -24,8 +25,9 @@ p {
   font-size: $font-size;
   display: inline-block;
 }
-.count {
+.border-for-count {
   @include setting-for-count;
-  background-color: #797d86;
+  background-color: #7b7f88;
 }
+
 

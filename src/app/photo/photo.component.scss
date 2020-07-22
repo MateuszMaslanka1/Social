@@ -35,7 +35,7 @@ section {
   border-radius: $border-radius;
   .transbox {
     border-radius: $border-radius;
-    background-color:rgba(32, 96, 105, 0.8);
+    background-color:rgba(16, 79, 94, 0.8);
     height: 100%;
     width: 100%;
     [class*="col-"] {
@@ -44,29 +44,31 @@ section {
     .nav-bar-content {
       display: flex;
       color: $color-for-text;
-      //width: 100%;
-      //height: 100%;
       .bars {
         flex: 2;
         margin: $margin-for-elements;
         font-size: .9rem;
         @include font-size-for-bigger-phone-nav-bar;
       }
-      .main-logo-photo {
-        // width:40px;
-        // height:40px;
-        // background-position: center;
-        // margin: $margin-for-elements;
-        // font-size: .9rem;
-        // @include font-size-for-bigger-phone-nav-bar;
-        // background-image: url("../../assets/photo/main-logo.png");
-      }
-      .logo {
+      .logo-and-title {
+        width: 100%;
         flex: 1;
-        text-align: center;
-        margin: 1rem;
-        font-family: 'BLACKJAR';
-        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .main-logo-photo {
+          width:40px;
+          height:40px;
+          background-position: center;
+          font-size: .9rem;
+          @include font-size-for-bigger-phone-nav-bar;
+          background-image: url("../../assets/photo/logo8.png");
+        }
+        .logo {
+          text-align: center;
+          font-family: 'BLACKJAR';
+          font-size: 1.5rem;
+        }
       }
       .suitcase {
         flex: 2;
@@ -91,6 +93,7 @@ section {
             }
         }
         h4 {
+          font-weight: normal;
           font-size: 1.2rem;
           @media screen and (max-width: 375px){
             font-size: 1rem;
@@ -102,60 +105,62 @@ section {
         }
         text-align: center;
         margin: 3rem;
-        //@media screen and (min-height: 480px){
-        //  margin: 3rem;
-        //}
       }
     }
     .tip-content {
-      display: flex;
-      //width: 100%;
-      //height: 100%;
-      color: $color-for-text;
+      width: 100%;
+      height: 100%;
       align-items: flex-end;
-      // .basketball-ball::after {
-      //   content: '21';
-      //   font-size: 1rem;
-      //   background-color: #f56f6c;
-      // }
-      .basketball-ball {
-        // border: 1px solid red;
-        flex: 2;
-        text-align: right;
-        font-size: $font-size-for-tim-menu-icon;
-        margin: $margin-for-tip-icon;
-        @include font-size-for-bigger-phone-tip-menu;
+      .border-for-icon {
+        width: 20rem;
+        @media screen and (min-width: 400px) {
+          width: 25rem;
+        }
+        margin: 0 auto;
+        display: flex;
+        .basketball-ball {
+          color: $color-for-text;
+          width: 5rem;
+          flex: 2;
+          text-align: right;
+          font-size: $font-size-for-tim-menu-icon;
+            margin: $margin-for-tip-icon;
+          @include font-size-for-bigger-phone-tip-menu;
 
-        position: relative;
-        display: flex;
-        justify-content: flex-end;
-      }
-      .text-border {
-        font-size: 0.8rem;
-        position: absolute;
-        width: 25px;
-        height: 21px;
-      //  top: 100%;
-        left: 95%;
-        bottom: 59%;
-        background-color: #f56f6c;
-        border-radius: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .behance {
-        flex: 1;
-        text-align: center;
-        font-size: $font-size-for-tim-menu-icon;
-        margin: $margin-for-tip-icon;
-        @include font-size-for-bigger-phone-tip-menu;
-      }
-      .tree {
-        flex: 2;
-        font-size: $font-size-for-tim-menu-icon;
-        margin: $margin-for-tip-icon;
-        @include font-size-for-bigger-phone-tip-menu;
+          position: relative;
+          display: flex;
+          justify-content: flex-end;
+        }
+        .text-border {
+          font-size: 0.8rem;
+          position: absolute;
+          width: 25px;
+          height: 21px;
+          left: 95%;
+          bottom: 59%;
+          background-color: #f56f6c;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .behance {
+          color: #a3bcc1;
+          width: 5rem;
+          flex: 1;
+          text-align: center;
+          font-size: $font-size-for-tim-menu-icon;
+          margin: $margin-for-tip-icon;
+          @include font-size-for-bigger-phone-tip-menu;
+        }
+        .tree {
+          color: #a3bcc1;
+          width: 5rem;
+          flex: 2;
+          font-size: $font-size-for-tim-menu-icon;
+          margin: $margin-for-tip-icon;
+          @include font-size-for-bigger-phone-tip-menu;
+        }
       }
     }
   }

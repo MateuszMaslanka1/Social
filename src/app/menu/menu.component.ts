@@ -19,8 +19,8 @@ export class MenuComponent implements OnInit {
   faPaperPlane = faPaperPlane;
   faBookmark = faBookmark;
   faCog = faCog;
-  mail = ['example1@example.pl','example2@example.pl'
-  ,'example3@example.pl','example4@example.pl','example5@example.pl'];
+  mail = ['example1@example.pl', 'example2@example.pl'
+    , 'example3@example.pl' , 'example4@example.pl', 'example5@example.pl'];
   countOfEmail: number;
   emailFlag = true;
 
@@ -30,10 +30,10 @@ export class MenuComponent implements OnInit {
 
   showEmailList($event) {
     this.emailFlag = !this.emailFlag;
-    $event.currentTarget.classList.toggle('click-style-option');
-    $event.currentTarget.childNodes[0].childNodes[0].classList.toggle('color-for-icon');
-    $event.currentTarget.childNodes[1].childNodes[0].classList.toggle('add-color-open-text');
-    $event.currentTarget.childNodes[1].childNodes[1].classList.toggle('color-for-count');
-    $event.currentTarget.childNodes[1].childNodes[1].classList.toggle('count');
+    const getTextAndIcon = $event.currentTarget.firstChild;
+    getTextAndIcon.childNodes[0].childNodes[0].classList.toggle('color-for-icon');
+    getTextAndIcon.childNodes[1].childNodes[0].classList.toggle('add-color-open-text');
+    getTextAndIcon.childNodes[1].childNodes[1].classList.toggle('color-for-count');
+    getTextAndIcon.childNodes[1].childNodes[1].classList.toggle('border-for-count');
   }
 }

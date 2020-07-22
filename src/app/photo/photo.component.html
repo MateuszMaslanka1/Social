@@ -4,8 +4,10 @@
       <div [className]="'bars'">
         <fa-icon  [icon]="faBars" (click)="showMenu()"></fa-icon>
       </div>
-      <div [className]="'main-logo-photo'"></div>
-      <h3 [className]="'logo'">uilove</h3>
+      <div [className]="'logo-and-title'">
+        <div [className]="'main-logo-photo'"></div>
+        <h3 [className]="'logo'">uilove</h3>
+      </div>
       <div [className]="'suitcase'">
         <fa-icon [icon]="faSuitcase"></fa-icon>
       </div>
@@ -18,18 +20,20 @@
       </div>
     </div>
     <div [className]="'tip-content col-12'">
-      <div [className]="'basketball-ball'">
-        <i class="fas fa-basketball-ball"></i>
-        <div [className]="'text-border'">
-          21
+      <div [className]="'border-for-icon'">
+        <div [className]="'basketball-ball'">
+          <i class="fas fa-basketball-ball"></i>
+          <div [className]="'text-border'">
+            21
+          </div>
+          <!-- <sup>21</sup> -->
         </div>
-        <!-- <sup>21</sup> -->
-      </div>
-      <div [className]="'behance'">
-        <fa-icon [icon]="faBahai"></fa-icon>
-      </div>
-      <div [className]="'tree'">
-        <i class="fab fa-behance"></i>
+        <div [className]="'behance'">
+          <fa-icon [icon]="faBahai"></fa-icon>
+        </div>
+        <div [className]="'tree'">
+          <i class="fab fa-behance"></i>
+        </div>
       </div>
     </div>
   </div>

@@ -1,3 +1,7 @@
 <p>{{this.text}}</p>
-<p [className]="'count'" *ngIf="count">{{count}}</p>
+<div [className]="'border-for-count'" [hidden]="+this.showCount===0">
+  <p [className]="'count'">{{this.showCount}}</p>
+</div>
+
+
 
