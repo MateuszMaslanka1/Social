@@ -15,7 +15,7 @@
           <div [className]="'icon'">
             <fa-icon [icon]='faEnvelope'></fa-icon>
           </div>
-          <app-menu-icons text="Mail Inbox"></app-menu-icons>
+          <app-menu-icons text="Mail Inbox" count="{{this.countOfEmail}}"></app-menu-icons>
         </div>
         <ul [className]="'sub-email-list'">
           <li [className]="'sub-element'" [hidden]='emailFlag' *ngFor="let item of mail">{{item}}</li>
@@ -24,25 +24,25 @@
           <div [className]="'icon'">
             <fa-icon [icon]='faUserFriends'></fa-icon>
           </div>
-          <app-menu-icons  text="Friends"></app-menu-icons>
+          <app-menu-icons  text="Friends" count="10"></app-menu-icons>
         </div>
         <div [className]="'element-list'">
           <div [className]="'icon'">
             <fa-icon [icon]='faPaperPlane'></fa-icon>
           </div>
-          <app-menu-icons text="Invents"></app-menu-icons>
+          <app-menu-icons text="Invents" count="5"></app-menu-icons>
         </div>
         <div  [className]="'element-list'">
           <div [className]="'icon'">
             <fa-icon [icon]='faBookmark'></fa-icon>
           </div>
-          <app-menu-icons text="Bookmarks"></app-menu-icons>
+          <app-menu-icons text="Bookmarks" count=""></app-menu-icons>
         </div>
         <div [className]="'element-list'">
           <div [className]="'icon'">
             <fa-icon [icon]='faCog'></fa-icon>
           </div>
-          <app-menu-icons text="Account Settings"></app-menu-icons>
+          <app-menu-icons text="Account Settings" count=""></app-menu-icons>
         </div>
    <div [className]="'eject'">
      <fa-icon [icon]='faEject'></fa-icon>

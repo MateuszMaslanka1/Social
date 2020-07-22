@@ -1,22 +1,23 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, ViewChildren, ElementRef, QueryList, AfterViewInit} from '@angular/core';
 import {faCloud, faDesktop, faImage, faMobileAlt} from '@fortawesome/free-solid-svg-icons';
-import {GetElementsService} from "../get-elements.service";
-import {of} from "rxjs";
+import {GetElementsService} from '../get-elements.service';
 
 @Component({
   selector: 'app-notifications',
   templateUrl: './notifications.component.html',
   styleUrls: ['./notifications.component.scss']
 })
-export class NotificationsComponent implements OnInit  {
+export class NotificationsComponent implements AfterViewInit  {
 
   constructor(private getElementsService: GetElementsService) { }
   faMobileAlt = faMobileAlt;
   faCould = faCloud;
   faImage = faImage;
   faDesktop = faDesktop;
+  @ViewChildren('notyficationElements') notyficationElements: QueryList<ElementRef>;
 
-  ngOnInit()  {
+  ngAfterViewInit() {
+    this.getElementsService.setNotyficationElements(this.notyficationElements);
   }
 
   toggleClass(event) {

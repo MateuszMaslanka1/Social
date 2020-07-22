@@ -1,5 +1,5 @@
 <section>
-    <div [className]="'first'">
+    <div #notyficationElements [className]="'first'">
       <div [className]="'notification'" (click)="toggleClass($event)">
         <div [className]="'icon'">
           <fa-icon [icon]='faMobileAlt'></fa-icon>
@@ -14,10 +14,10 @@
         <app-notifications-icons></app-notifications-icons>
       </div>
     </div>
-    <div [className]="'second'">
+    <div #notyficationElements [className]="'second'">
       <div [className]="'notification'" (click)="toggleClass($event)">
         <div [className]="'icon'">
-          <fa-icon [icon]='faCould'></fa-icon>
+          <i class="fas fa-cloud-sun-rain"></i>
         </div>
           <div [className]="'info'">
             <p>1 minute ago</p>
@@ -29,10 +29,10 @@
         <app-notifications-icons></app-notifications-icons>
       </div>
     </div>
-    <div [className]="'third'">
+    <div #notyficationElements [className]="'third'">
       <div [className]="'notification'" (click)="toggleClass($event)">
         <div [className]="'icon'">
-          <fa-icon [icon]='faImage'></fa-icon>
+          <i class="far fa-image"></i>
         </div>
         <div [className]="'info'">
             <p>1 minute ago</p>
@@ -44,7 +44,7 @@
         <app-notifications-icons></app-notifications-icons>
       </div>
     </div>
-    <div [className]="'fourth'">
+    <div  #notyficationElements [className]="'fourth'">
       <div [className]="'notification'" (click)="toggleClass($event)">
         <div [className]="'icon'">
           <fa-icon [icon]='faDesktop'></fa-icon>

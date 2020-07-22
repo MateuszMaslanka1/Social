@@ -3,14 +3,15 @@ $font-size-for-icons-nav-bar: 1.2rem;
 $font-size-for-icons-tip-menu: 1.5rem;
 $color-for-text: rgb(255,255,255);
 $border-radius: 10px 10px 0 0;
-$margin-for-tip-icon: 2rem;
+$margin-for-tip-icon: 1rem 1rem 2rem 1rem;
+$font-size-for-tim-menu-icon: 1.2rem;
 @mixin font-size-for-bigger-phone-nav-bar {
- @media screen and (min-width: 363px){
+ @media screen and (min-width: 375px){
     font-size: $font-size-for-icons-nav-bar;
   }
 }
 @mixin font-size-for-bigger-phone-tip-menu {
-  @media screen and (min-width: 363px){
+  @media screen and (min-width: 375px){
     font-size: $font-size-for-icons-tip-menu;
   }
 }
@@ -52,15 +53,20 @@ section {
         @include font-size-for-bigger-phone-nav-bar;
       }
       .main-logo-photo {
-        background-image: url("../../assets/photo/Beznazwy.png");
+        // width:40px;
+        // height:40px;
+        // background-position: center;
+        // margin: $margin-for-elements;
+        // font-size: .9rem;
+        // @include font-size-for-bigger-phone-nav-bar;
+        // background-image: url("../../assets/photo/main-logo.png");
       }
       .logo {
         flex: 1;
         text-align: center;
-        margin: $margin-for-elements;
+        margin: 1rem;
         font-family: 'BLACKJAR';
-        font-size: .9rem;
-        @include font-size-for-bigger-phone-nav-bar;
+        font-size: 1.5rem;
       }
       .suitcase {
         flex: 2;
@@ -77,12 +83,18 @@ section {
           font-family: 'BLACKJAR';
           padding: .9rem;
           font-size: 2rem;
-          @media screen and (max-width: 362px){
+          @media screen and (max-width: 375px){
             font-size: 1.5rem;
           }
             span {
               color: #f56f6c;
             }
+        }
+        h4 {
+          font-size: 1.2rem;
+          @media screen and (max-width: 375px){
+            font-size: 1rem;
+          }
         }
         p {
           font-size: 1rem;
@@ -101,23 +113,55 @@ section {
       //height: 100%;
       color: $color-for-text;
       align-items: flex-end;
+      // .basketball-ball::after {
+      //   content: '21';
+      //   font-size: 1rem;
+      //   background-color: #f56f6c;
+      // }
       .basketball-ball {
+        // border: 1px solid red;
         flex: 2;
         text-align: right;
-        font-size: 1.2rem;
+        font-size: $font-size-for-tim-menu-icon;
         margin: $margin-for-tip-icon;
         @include font-size-for-bigger-phone-tip-menu;
+          // sup {
+          //   text-align: center;
+          //   font-size: 1rem;
+          //   display: inline-block;
+          //   background-color: #f56f6c;
+          //   border-radius: 10px;
+          //   width: 10px;
+          //   height: 15px;
+          // }
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .text-border {
+        font-size: 0.8rem;
+        position: absolute;
+        width: 25px;
+        height: 21px;
+      //  top: 100%;
+        left: 95%;
+        bottom: 59%;
+        background-color: #f56f6c;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .behance {
         flex: 1;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: $font-size-for-tim-menu-icon;
         margin: $margin-for-tip-icon;
         @include font-size-for-bigger-phone-tip-menu;
       }
       .tree {
         flex: 2;
-        font-size: 1.2rem;
+        font-size: $font-size-for-tim-menu-icon;
         margin: $margin-for-tip-icon;
         @include font-size-for-bigger-phone-tip-menu;
       }

@@ -14,7 +14,7 @@
       width: 4rem;
       justify-content: center;
       align-items: center;
-      fa-icon {
+      fa-icon, i{
         flex: 1;
         text-align: center;
         font-size: 2rem;
@@ -65,10 +65,10 @@ section {
       border-radius: 10px 10px 0 0;
       position: absolute;
       width: 100%;
-      top: 365px;
+      top: 345px;
       background: #f56f6c;
-      @media screen and (max-width: 362px){
-        top: 340px;
+      @media screen and (max-width: 375px){
+        top: 320px;
       }
       .first {
         position: relative;

@@ -1,4 +1,4 @@
-import { Injectable, ElementRef } from '@angular/core';
+import { Injectable, ElementRef, QueryList } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
@@ -12,6 +12,7 @@ export class GetElementsService {
     notification: ElementRef
   };
   openMenuFlag = true;
+  notyficationElements: QueryList<ElementRef>;
 
   getElements() {
     return this.elements;
@@ -27,7 +28,14 @@ export class GetElementsService {
   }
 
   setOpenMenuFlag(openMenuFlag) {
-    console.log(openMenuFlag);
     this.openMenuFlag = openMenuFlag;
+  }
+
+  getNotyficationElements() {
+    return this.notyficationElements;
+  }
+
+  setNotyficationElements(notyficationElements) {
+    this.notyficationElements = notyficationElements;
   }
 }

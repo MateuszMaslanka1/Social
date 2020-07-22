@@ -1,14 +1,6 @@
-$font-size: 1.2rem;
+$font-size: 1rem;
 $margin-elements: 1rem;
- :host {
-   display: flex;
-   justify-content: space-between;
- }
-p {
-  font-size: $font-size;
-  display: inline-block;
-}
-.count {
+@mixin setting-for-count {
   color: white;
   font-size: $font-size;
   margin-right: $margin-elements;
@@ -16,6 +8,24 @@ p {
   height: 1.5rem;
   border-radius: 15px;
   text-align: center;
+}
+ :host {
+   display: flex;
+   justify-content: space-between;
+ }
+ .color-for-count {
+  @include setting-for-count;
+  background-color: darkgreen;
+ }
+ .add-color-open-text {
+   color: white;
+ }
+p {
+  font-size: $font-size;
+  display: inline-block;
+}
+.count {
+  @include setting-for-count;
   background-color: #797d86;
 }
 

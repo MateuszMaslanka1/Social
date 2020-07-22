@@ -9,6 +9,7 @@ export class MenuIconsComponent implements OnInit {
   constructor() { }
 
   @Input('text') text: string;
+  @Input('count') count: number;
 
   ngOnInit() {
   }

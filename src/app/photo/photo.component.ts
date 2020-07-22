@@ -1,5 +1,5 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
-import { faBars, faSuitcase, faTree, faBahai, faBaseballBall } from '@fortawesome/free-solid-svg-icons';
+import { Component, OnInit } from '@angular/core';
+import { faBars, faSuitcase, faTree, faBahai, faBaseballBall, } from '@fortawesome/free-solid-svg-icons';
 import { GetElementsService } from '../get-elements.service';
 
 @Component({
@@ -28,5 +28,20 @@ export class PhotoComponent implements OnInit {
     this.elemetnsToShow.notification.nativeElement.classList.toggle('displament-notification');
     this.openMenuFlag = !this.openMenuFlag;
     this.getElementsService.setOpenMenuFlag(this.openMenuFlag);
+    if (!this.openMenuFlag) {
+      this.getNotyficationElmentsToHidden();
+    }
+  }
+
+  getNotyficationElmentsToHidden() {
+    const elements = this.getElementsService.getNotyficationElements().toArray();
+    elements.forEach((el) => {
+      if (el.nativeElement.children[0].classList.contains('add-displacement-to-notification') &&
+      el.nativeElement.children[1].classList.contains('add-displacement-to-option')) {
+        el.nativeElement.children[0].classList.toggle('add-displacement-to-notification');
+        el.nativeElement.children[1].classList.toggle('option');
+        el.nativeElement.children[1].classList.toggle('add-displacement-to-option');
+      }
+    });
   }
 }
